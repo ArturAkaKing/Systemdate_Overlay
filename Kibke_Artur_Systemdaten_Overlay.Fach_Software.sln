@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kibke_Artur_Systemdaten_Overlay", "Kibke_Artur_Systemdaten_Overlay\Kibke_Artur_Systemdaten_Overlay.csproj", "{2352B088-E0D4-46EC-A238-45CE489EF492}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2352B088-E0D4-46EC-A238-45CE489EF492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2352B088-E0D4-46EC-A238-45CE489EF492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2352B088-E0D4-46EC-A238-45CE489EF492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2352B088-E0D4-46EC-A238-45CE489EF492}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {779DBB71-0C6F-4E61-9424-51198CCC948A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,79 @@
+﻿<Window x:Class="Kibke_Artur_Systemdaten_Overlay.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kibke_Artur_Systemdaten_Overlay"
+        mc:Ignorable="d"
+        Title="Systemdaten Overlay"
+        Height="155" Width="186"
+		AllowsTransparency="True"
+        Background="#AA1E1E1E"
+        ShowInTaskbar="False"
+        ResizeMode="NoResize"
+        Cursor="Arrow" Topmost="True" IsTabStop="False" WindowStyle="None"
+        >
+
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <Grid Margin="0 2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="CPU:" Foreground="LightGray" FontSize="14" />
+                <TextBlock x:Name="CpuTextBlock" Text="00%" Grid.Column="1" Foreground="LightGray" FontSize="14" />
+            </Grid>
+
+            <Grid Margin="0 2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="GPU:" Foreground="LightGray" FontSize="14" />
+                <TextBlock x:Name="GpuTextBlock" Text="00%" Grid.Column="1" Foreground="LightGray" FontSize="14" />
+            </Grid>
+
+            <Grid Margin="0 2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="RAM:" Foreground="LightGray" FontSize="14" />
+                <TextBlock x:Name="RamTextBlock" Text="0.0 / 0.0 GB" Grid.Column="1" Foreground="LightGray" FontSize="14" />
+            </Grid>
+
+			<Grid Margin="0 2" x:Name="AkkuRow">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="Auto" />
+				</Grid.ColumnDefinitions>
+				<TextBlock x:Name="Akkublock" Text="Akku:" Foreground="LightGray" FontSize="14" />
+				<TextBlock x:Name="AkkuTextBlock" Text="100%" Grid.Column="1" Foreground="LightGray" FontSize="14" />
+			</Grid>
+
+			<Grid Margin="0 2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="IP:" Foreground="LightGray" FontSize="14" />
+                <TextBlock x:Name="IpTextBlock" Text="192.168.0.1" Grid.Column="1" Foreground="LightGray" FontSize="14" />
+            </Grid>
+
+            <Grid Margin="0 2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Ping:" Foreground="LightGray" FontSize="14" />
+                <TextBlock x:Name="PingTextBlock" Text="-- ms" Grid.Column="1" Foreground="LightGray" FontSize="14" />
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
