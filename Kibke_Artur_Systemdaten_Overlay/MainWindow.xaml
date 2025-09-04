@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Kibke_Artur_Systemdaten_Overlay"
         mc:Ignorable="d"
         Title="Systemdaten Overlay"
-        Height="155" Width="186"
+        Height="175" Width="186"
 		AllowsTransparency="True"
         Background="#AA1E1E1E"
         ShowInTaskbar="False"
@@ -73,6 +73,15 @@
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="Ping:" Foreground="LightGray" FontSize="14" />
                 <TextBlock x:Name="PingTextBlock" Text="-- ms" Grid.Column="1" Foreground="LightGray" FontSize="14" />
+            </Grid>
+
+            <Grid Margin="0 2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Laufzeit:" Foreground="LightGray" FontSize="14" />
+                <TextBlock x:Name="LaufzeitTextBlock" Text="D" Grid.Column="1" Foreground="LightGray" FontSize="14" />
             </Grid>
         </StackPanel>
     </Grid>

@@ -73,7 +73,7 @@ namespace Kibke_Artur_Systemdaten_Overlay
             timer.Tick += (s, e) =>
             {
                 VerschiebeFensterAufZweitenMonitor();
-
+                
                 //Klassen Funtkion wird auf gerufen und in TextBlock verfasst
                 CpuTextBlock.Text = $"{daten.CpuNutzung():F1}%";
                 GpuTextBlock.Text = $"{daten.GpuNutzung():F1}%";
@@ -81,6 +81,7 @@ namespace Kibke_Artur_Systemdaten_Overlay
                 AkkuTextBlock.Text = $"{daten.AkkuProzent()}%";
                 IpTextBlock.Text = $"{daten.GetLocalIPAddress()}";
                 PingTextBlock.Text = $"{daten.Ping()} ms";
+                LaufzeitTextBlock.Text = daten.Laufzeit();
 
             };
 

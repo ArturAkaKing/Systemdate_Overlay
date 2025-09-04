@@ -132,5 +132,17 @@ namespace Kibke_Artur_Systemdaten_Overlay
             //immer 0 wäre aber mal 100 sind es 100% und in int umgewandelt
             return (int)(SystemInformation.PowerStatus.BatteryLifePercent * 100);
         }
+
+        public string Laufzeit()
+        {
+            // Zeit seit dem Start in Millisekunden
+            long ms = Environment.TickCount;
+
+            // In TimeSpan umwandeln (macht Tage, Stunden, Minuten, Sekunden draus)
+            TimeSpan laufzeit = TimeSpan.FromMilliseconds(ms);
+
+            // Schön formatiert zurückgeben
+            return $"{laufzeit.Days}d {laufzeit.Hours}h {laufzeit.Minutes}m";
+        }
     }
 }
