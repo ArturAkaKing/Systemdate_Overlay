@@ -110,6 +110,7 @@ namespace Kibke_Artur_Systemdaten_Overlay
 
         private bool HatAkku()
         {
+            //Abfrage ob das gerät eine Batterie hat.
             var status = System.Windows.Forms.SystemInformation.PowerStatus.BatteryChargeStatus;
             return status != System.Windows.Forms.BatteryChargeStatus.NoSystemBattery;
         }
