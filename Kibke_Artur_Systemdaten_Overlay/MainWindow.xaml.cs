@@ -53,6 +53,7 @@ namespace Kibke_Artur_Systemdaten_Overlay
 
             if (!HatAkku())
             {
+                //Hier wird das Akku aus dem Fester infernt und angepasst
                 AkkuRow.Visibility = Visibility.Collapsed;
                 this.Height -= 20;
             }
